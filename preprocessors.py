@@ -134,6 +134,7 @@ class CategoricalEncoder(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):
 
         # HINT: persist the dummy variables found in train set
+        # this to make sure all the levels of categorical var appear in train_set keep appearing in test set
         self.dummies = pd.get_dummies(X[self.variables], drop_first=True).columns
 
         return self
