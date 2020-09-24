@@ -1,7 +1,7 @@
 import pandas as pd
 
 import joblib
-import config
+from packages.titanic.titanic.config import config
 
 
 def make_prediction(input_data):
@@ -17,7 +17,6 @@ def make_prediction(input_data):
 if __name__ == '__main__':
     
     # test pipeline
-    import numpy as np
     from sklearn.model_selection import train_test_split
     from sklearn.metrics import accuracy_score
 

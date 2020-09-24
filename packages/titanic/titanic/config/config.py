@@ -1,6 +1,12 @@
+import pathlib
+import titanic
+import pandas as pd
+
+
 # ====   PATHS ===================
 
-TRAINING_DATA_FILE = "titanic.csv"
+PACKAGE_ROOT = pathlib.Path(titanic.__file__).resolve().parent
+TRAINING_DATA_FILE = "../dataset/titanic.csv"
 PIPELINE_NAME = 'logistic_regression.pkl'
 
 

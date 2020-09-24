@@ -2,8 +2,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-import preprocessors as pp
-import config
+from packages.titanic.titanic.processing import preprocessors as pp
+from packages.titanic.titanic.config import config
 
 titanic_pipe = Pipeline(
     # complete with the list of steps from the preprocessors file
